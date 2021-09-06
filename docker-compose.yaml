@@ -6,5 +6,6 @@ services:
     build: .
     ports:
       - "23333:23333"
+      - "25565:25565"
     volumes:
       - "./server:/opt/MCSManager/server"
