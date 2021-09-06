@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    image: roc826/mcs_manager
+    container_name: mcs_manager
+    build: .
+    ports:
+      - "23333:23333"
+    volumes:
+      - "./server:/opt/MCSManager/server"
